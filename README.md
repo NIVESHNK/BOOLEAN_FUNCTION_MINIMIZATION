@@ -18,6 +18,9 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Logic Diagram**
 
+
+![WhatsApp Image 2025-04-23 at 21 31 14_0c0c9349](https://github.com/user-attachments/assets/a57f97fc-67bb-44ca-ba4c-9785e01ebd90)
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -33,18 +36,39 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+```
+Exp 2:
+module logic_function(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+endmodule
 
-Developed by: RegisterNumber:*/
+module logic_function(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
+endmodule	
+```
+
+Developed by: RegisterNumber:212224050027
 
 
 **RTL realization**
 
-**Output:**
+![WhatsApp Image 2025-04-23 at 21 11 34_e7b030bf](https://github.com/user-attachments/assets/47f2fed7-5e18-4309-b80a-6010ecf76fda)
+
+
+![Uploading WhatsApp Image 2025-04-23 at 21.11.40_4d553a8e.jpg…]()
+
 
 **RTL**
 
-**Timing Diagram**
+![WhatsApp Image 2025-04-23 at 21 11 24_a4836895](https://github.com/user-attachments/assets/f1b77a27-e344-4f78-8445-2880bbc06506)
+
+![WhatsApp Image 2025-04-23 at 21 11 30_e1cc0a6c](https://github.com/user-attachments/assets/1ff10260-4c0f-4f32-aa47-a5a030d8280d)
+
+
 
 **Result:**
 
